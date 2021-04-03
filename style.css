@@ -416,7 +416,6 @@ button:focus {
 .pic{
     width:80px;
     height:80px;
-    border-radius: 50%;
     background: white;
     margin-right:15px;
 }
@@ -472,7 +471,7 @@ button:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
+    font-size: 0.9em;
     text-align: center;
 }
 
@@ -574,9 +573,15 @@ video{
 }
 
 .syllabus{
-    width:90%;
+    width:85%;
+    margin: 40px auto;
 }
 
+.syllabus-body{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
 .details{
     width:100%;
     margin-top:25px;
@@ -586,7 +591,13 @@ video{
 
 }
 
-
+@media (max-width: 1140px){
+    .syllabus-body{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
 
 
@@ -635,13 +646,6 @@ video{
     align-items: center;
     font-size: 0.8rem;
     text-align: center;
-    }
-    .pic{
-        width:120px;
-        height:80px;
-        border-radius: 50%;
-        background: white;
-        margin-right:15px;
     }
 
     .syllabus{
