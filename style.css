@@ -13,7 +13,7 @@ body{
 #header{
     width: 100vw;
     position:fixed;
-    height:14vh;
+    height:fit-content;
     background: #1e2024;
     padding: 24px;
     padding-left: 95px;
@@ -25,14 +25,14 @@ body{
 }
 
 .logo{
-    width:130px;
+    width:100%;
     height: fit-content;
     position: relative;
 }
 
 .logo img{
-    width: 130px;
-    height:6vh;
+    width: 13%;
+    height:auto;
 }
 
 .user-profile{
@@ -474,14 +474,18 @@ button:focus {
 
 
 @media (max-width: 768px){
- #header{
-     padding: 24px 100px 24px 70px;
-     width:100%;
- }
-
-.logo{
-    margin:0 auto;
-}
+    #header{
+        height:10vh;
+    }
+    .logo{
+        width:50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo img{
+        width:80%;
+    }
  .content-head{
     color: white;
     font-family:Arial, Helvetica, sans-serif;
@@ -708,22 +712,31 @@ video{
     width:20%;
 }
 
-@media (min-width:1280px){
+@media (min-width:768px){
     #header{
         padding: 24px 100px 24px 70px;
         width:100%;
+        height:fit-content;
     }
    
-   .logo{
-       margin:0 auto;
-   }
+    .logo{
+        width:100%;
+        height: fit-content;
+        position: relative;
+    }
+    
+    .logo img{
+        width: 13%;
+        height:auto;
+    }
+    
     .content-head{
        color: white;
        font-family:Arial, Helvetica, sans-serif;
        display: flex;
        justify-content: center;
        align-items: center;
-       font-size: 0.9em;
+       font-size: 1em;
        text-align: center;
    }
    
@@ -751,7 +764,7 @@ video{
    }
    .description{
        position:relative;
-       width:60%;
+       width:50%;
        font-family: Arial, Helvetica, sans-serif;
        text-align: justify;
    }
@@ -760,7 +773,7 @@ video{
    .right-part{
        position: relative;
        width:30%;
-       left:10%;
+       left:16%;
        top:0;
        border-radius: 10px;
    }
