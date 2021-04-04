@@ -694,6 +694,129 @@ video{
     }
 }
 
-@media (min-width:320px){
 
+.back{
+    position:fixed;
+    z-index: -200;
+}
+
+.back img{
+    width:60%;
+}
+
+.back img:nth-child(2){
+    width:20%;
+}
+
+@media (min-width:1280px){
+    #header{
+        padding: 24px 100px 24px 70px;
+        width:100%;
+    }
+   
+   .logo{
+       margin:0 auto;
+   }
+    .content-head{
+       color: white;
+       font-family:Arial, Helvetica, sans-serif;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 0.9em;
+       text-align: center;
+   }
+   
+   .user-profile{
+       position: relative;
+       height:45px;
+       width: 45px;
+       background: white;
+       border-radius: 50%;
+       margin-top:-5px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 1.4em;
+   }
+   .content-body{
+       width:100vw;
+       height:fit-content;
+       background:rgba(0,0,0,0.14);
+       padding: 40px;
+       padding-left: 60px;
+       margin-top: 15px;
+       display: flex;
+       flex-direction: row;
+   }
+   .description{
+       position:relative;
+       width:60%;
+       font-family: Arial, Helvetica, sans-serif;
+       text-align: justify;
+   }
+   
+   
+   .right-part{
+       position: relative;
+       width:30%;
+       left:10%;
+       top:0;
+       border-radius: 10px;
+   }
+   
+   .player {
+       width: 100%;
+       height: 0;
+       padding-bottom: 56.25%;
+       box-shadow: 0px 10px 0px -3px rgba(0, 0, 0, 0.2);
+       position: relative;
+       overflow: hidden;
+       background: #000000;
+       border-radius: 5px;
+   }
+   .video-part{
+       position: relative;
+       width:100%;
+       margin: 0 auto 50px auto;
+   }
+   video{
+       position: relative;
+       border-radius: 10px;
+       background: url('images/Front-End-Development-Frameworks-for-Faster-Web-Development.jpg');
+       object-fit:contain;
+   }
+   
+   .buttons{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       margin-top: 15px;
+   }
+   #join{
+       padding: 10px 25px;
+       width: 100%;
+       border-radius: 5px;
+       background: none;
+       font-weight: bold;
+       color: #80c0ee;
+       border : 0.5px solid rgb(96, 189, 243);
+       position: relative;
+       top:0%;
+       left:0%;
+       cursor: pointer;
+   }
+   
+   #cart{
+       padding: 10px 25px;
+       width: 100%;
+       border-radius: 5px;
+       background: rgb(96, 189, 243);
+       border:none;
+       font-weight: bolder;
+       color:#1D2026;
+       cursor: pointer;
+       margin-top:2%
+   }
+   
 }
