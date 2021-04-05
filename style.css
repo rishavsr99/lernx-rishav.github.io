@@ -715,7 +715,7 @@ video{
 
 .back{
     position:fixed;
-    z-index: -200;
+    z-index: -210;
 }
 
 .back img{
