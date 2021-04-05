@@ -926,7 +926,7 @@ video{
     max-height: fit-content;
     overflow: auto;
     color:white;
-    margin:10% auto;
+    margin:5% auto 2% auto;
     display: flex;
     justify-content: space-around;
   }
