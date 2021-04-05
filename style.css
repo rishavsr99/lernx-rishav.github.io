@@ -649,6 +649,10 @@ video{
     display: flex;
     flex-direction: column;
     }
+
+    .popup{
+        height:80vh;
+    }
     #header{
     width: 100vw;
     position:fixed;
@@ -888,11 +892,11 @@ video{
     background: #1D2026;
     border: 1px solid rgb(71, 165, 189);
     border-radius: 5px;
-    width: 30%;
+    width: 50%;
     position: relative;
     transition: all 2s ease-in-out;
     text-align:center;
-    height:80vh;
+    height:fit-content;
   }
   
   .pop-url{
