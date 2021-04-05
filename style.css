@@ -473,9 +473,9 @@ button:focus {
 
 
 
-@media (max-width: 768px){
+@media (max-width: 800px){
     #header{
-        height:10vh;
+        height:14vh;
     }
     .logo{
         width:50%;
@@ -706,13 +706,14 @@ video{
 
 .back img{
     width:60%;
+    opacity: 0.7;
 }
 
 .back img:nth-child(2){
     width:20%;
 }
 
-@media (min-width:768px){
+@media (min-width:800px){
     #header{
         padding: 24px 100px 24px 70px;
         width:100%;
@@ -720,13 +721,14 @@ video{
     }
    
     .logo{
-        width:100%;
+        position: relative;
+        width:13%;
         height: fit-content;
         position: relative;
     }
     
     .logo img{
-        width: 13%;
+        width: 100%;
         height:auto;
     }
     
@@ -832,4 +834,22 @@ video{
        margin-top:2%
    }
    
+}
+
+@media (min-height:1040px){
+    .content{
+        margin-top: 12vh;
+    }
+}
+
+@media (min-height:1400px){
+    .content{
+        margin-top:10vh;
+    }
+}
+
+@media (min-height:1700px){
+    .content{
+        margin-top:8vh;
+    }
 }
