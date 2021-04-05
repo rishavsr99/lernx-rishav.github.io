@@ -611,8 +611,9 @@ video{
 }
 .details{
     width:100%;
-    margin-top:25px;
-    margin-left:10px;
+    padding-left: 40px;
+    margin-right: 0%;
+    margin-left:0%;
 }
 
 
