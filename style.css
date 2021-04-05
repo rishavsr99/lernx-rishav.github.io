@@ -133,10 +133,13 @@ body{
     border:2px solid white;
     font-size: 1rem;
     padding:7px 25px;
-    color:white;
     border-radius: 5px;
-    cursor: pointer;
     width:120px;
+}
+
+#share a{
+    color:white;
+    text-decoration: none;
 }
 
 #syl{
@@ -146,9 +149,13 @@ body{
     padding:7px 25px;
     color:white;
     border-radius: 5px;
-    cursor: pointer;
     width:120px;
     text-align: center;
+}
+
+#syl a{
+    color:white;
+    text-decoration: none;
 }
 
 .right-part{
@@ -638,7 +645,10 @@ video{
     .user-profile{
         display: none;
     }
-
+    .main-content{
+    display: flex;
+    flex-direction: column;
+    }
     #header{
     width: 100vw;
     position:fixed;
@@ -853,3 +863,85 @@ video{
         margin-top:8vh;
     }
 }
+
+
+.overlay {
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 5ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index:100;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin:10vh auto;
+    padding: 50px;
+    background: #1D2026;
+    border: 1px solid rgb(71, 165, 189);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 2s ease-in-out;
+    text-align:center;
+    height:80vh;
+  }
+  
+  .pop-url{
+      margin:25vh auto;
+      height:fit-content;
+  }
+  .popup h2 {
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 5ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+  }
+  .popup .close:hover {
+    color: red;
+  }
+  .popup .main-content {
+    width:100%;
+    max-height: fit-content;
+    overflow: auto;
+    color:white;
+    margin:10% auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .main-content ul{
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: justify;
+      list-style-type: none;
+      font-size: 0.8rem;
+  }
+
+  .main-content ul li{
+      padding:5px;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
