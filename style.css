@@ -443,10 +443,12 @@ button:focus {
     height:80px;
     background: white;
     margin-right:15px;
+    position: relative;
 }
 
 .ins-part-1{
     display: flex;
+    justify-content: flex-start;
 }
 
 .ins-part-1 h4{
@@ -655,8 +657,12 @@ video{
     flex-direction: column;
     }
 
+    .pic{
+        display: none;
+    }
     .popup{
         height:80vh;
+        margin: 8vh auto;
     }
     #header{
     width: 100vw;
@@ -896,7 +902,7 @@ video{
   }
   
   .popup {
-    margin:10vh auto;
+    margin:20vh auto;
     padding: 50px;
     background: #1D2026;
     border: 1px solid rgb(71, 165, 189);
