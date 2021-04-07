@@ -29,6 +29,7 @@ body{
     width:100%;
     height: fit-content;
     position: relative;
+    cursor: pointer;
 }
 
 .logo img{
@@ -40,15 +41,29 @@ body{
     position: relative;
     height:45px;
     width: 45px;
-    background: white;
+    color:white;
     border-radius: 50%;
     margin-top:-5px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.4rem;
+    cursor: pointer;
 }
-
+.menu{
+    position: fixed;
+       height:45px;
+       width: 45px;
+       color:white;
+       border-radius: 50%;
+       margin-top:-5px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 1.4em;
+       left:93%;
+       cursor: pointer;
+}
 .content{
     position: absolute;
     margin-top: 16.8vh;
@@ -483,7 +498,7 @@ button:focus {
 
 
 
-@media (max-width: 800px){
+@media (max-width: 799px){
     #header{
         height:14vh;
         display: flex;
@@ -492,8 +507,8 @@ button:focus {
     }
     .logo{
         position: fixed;
-        width:25%;
-       
+        width:20%;
+        
     }
     .logo img{
         width:100%;
@@ -512,14 +527,17 @@ button:focus {
     position:fixed;
     height:45px;
     width: 45px;
-    background: white;
+    color:white;
     border-radius: 50%;
-    margin-top:-5px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.4em;
-    left:80%;
+    left:85%;
+}
+
+.menu{
+    left:90%; 
 }
 .content-body{
     width:100vw;
@@ -656,7 +674,10 @@ video{
     display: flex;
     flex-direction: column;
     }
-
+    .menu{
+        left:85%;
+        
+    }
     .pic{
         display: none;
     }
@@ -670,6 +691,7 @@ video{
     height:14vh;
     background: #1e2024;
     padding: 24px;
+    align-items: center;
     padding-left: 95px;
     box-shadow: 2px 2px 20px rgb(22, 21, 21);
     display: flex;
@@ -686,6 +708,7 @@ video{
         margin:0;
         width:fit-content;
     }
+    
 
     .logo img{
         
@@ -774,14 +797,14 @@ video{
        position: fixed;
        height:45px;
        width: 45px;
-       background: white;
+       color:white;
        border-radius: 50%;
        margin-top:-5px;
        display: flex;
        justify-content: center;
        align-items: center;
        font-size: 1.4em;
-       left:90%;
+       left:89%;
    }
    .content-body{
        width:100vw;
