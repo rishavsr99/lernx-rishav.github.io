@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
@@ -9,7 +11,9 @@ body{
     overflow-x: hidden;
     cursor: default;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 #header{
     width: 100vw;
     position:fixed;
@@ -70,12 +74,11 @@ body{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    
 }
 
 .content-head{
     color: white;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,21 +217,38 @@ video{
     cursor: pointer;
 }
 
+#top{
+    text-align: center;
+    color:white;
+    margin-bottom: 20px;
 
+}
 
 #cart{
     padding: 10px 25px;
     width: 45%;
     border-radius: 5px;
-    background: rgb(96, 189, 243);
+    background:rgb(74, 163, 214);
     border:none;
     font-weight: bolder;
     color:#1D2026;
     cursor: pointer;
 }
 
+.rupees{
+    display: flex;
+    margin-top:5px;
+    margin-bottom: 10px;
+    color:whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+}
 
-
+.fas{
+    font-size: 1.7rem;
+    margin-top:5px;
+    margin-right: 5px;
+}
 
 :root {
 	--accent: #6fb4e6;
@@ -454,11 +474,20 @@ button:focus {
 }
 
 .pic{
+    box-sizing: border-box;
     width:80px;
     height:80px;
-    background: white;
+    background: rgba(0,0,0,0.34);
+    border: 1px solid white;
     margin-right:15px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic img{
+    width:90%;
 }
 
 .ins-part-1{
@@ -491,6 +520,7 @@ button:focus {
     border : 0.5px solid rgb(96, 189, 243);
     cursor: pointer;
     margin: 40px auto;
+    margin-bottom: 20px;
 }
 
 
@@ -515,7 +545,7 @@ button:focus {
     }
  .content-head{
     color: white;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -544,6 +574,7 @@ button:focus {
     height:fit-content;
     background:rgba(0,0,0,0.14);
     padding: 40px;
+    
     margin-top: 15px;
     display: flex;
     flex-direction: column-reverse;
@@ -716,7 +747,7 @@ video{
     }
 .content-head{
     color: white;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -785,11 +816,11 @@ video{
     
     .content-head{
        color: white;
-       font-family:Arial, Helvetica, sans-serif;
+       font-family: 'Poppins', sans-serif;
        display: flex;
        justify-content: center;
        align-items: center;
-       font-size: 1em;
+       font-size: 1.2em;
        text-align: center;
    }
    
@@ -813,6 +844,7 @@ video{
        padding: 40px;
        padding-left: 60px;
        margin-top: 15px;
+       padding-bottom: 0;
        display: flex;
        flex-direction: row;
    }
@@ -872,6 +904,7 @@ video{
        top:0%;
        left:0%;
        cursor: pointer;
+       
    }
    
    #cart{
