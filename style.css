@@ -132,7 +132,7 @@ html{
 }
 
 #created a{
-    color: rgb(74, 163, 214);
+    color:#27c5ff;
     font-size:0.9rem;
 }
 
@@ -155,7 +155,9 @@ html{
     border-radius: 5px;
     width:120px;
 }
-
+#share:hover{
+    background: rgba(0, 0, 0, 0.47);
+}
 #share a{
     color:white;
     text-decoration: none;
@@ -171,7 +173,9 @@ html{
     width:120px;
     text-align: center;
 }
-
+#syl:hover{
+    background: rgba(0, 0, 0, 0.47);
+}
 #syl a{
     color:white;
     text-decoration: none;
@@ -208,8 +212,8 @@ video{
     border-radius: 5px;
     background: none;
     font-weight: bold;
-    color: #80c0ee;
-    border : 0.5px solid rgb(96, 189, 243);
+    color: #27c5ff;
+    border : 0.5px solid #27c5ff;
     display: inline-block;
     position: relative;
     overflow:hidden;
@@ -217,24 +221,25 @@ video{
     cursor: pointer;
 }
 
-#top{
-    text-align: center;
-    color:white;
-    margin-bottom: 20px;
-
+#join:hover{
+    background: rgba(0,0,0,0.34);
 }
 
 #cart{
+    position: relative;
     padding: 10px 25px;
     width: 45%;
     border-radius: 5px;
-    background:rgb(74, 163, 214);
+    background:#27c5ff;
     border:none;
     font-weight: bolder;
     color:#1D2026;
     cursor: pointer;
 }
 
+#cart:hover{
+    background: #27d5ff;
+}
 .rupees{
     display: flex;
     margin-top:5px;
@@ -399,7 +404,6 @@ button:focus {
     margin: 40px;
     padding:40px;
     margin-top: 45px;
-   /* border: 0.1px solid rgb(71, 165, 189);*/
     background: #292b33;
     box-shadow: 1px 1px 50px #111316;
     text-align: center;
@@ -496,7 +500,7 @@ button:focus {
 }
 
 .ins-part-1 h4{
-    color:rgb(96, 189, 243);
+    color:#27c5ff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -516,11 +520,11 @@ button:focus {
     border-radius: 5px;
     background: none;
     font-weight: bold;
-    color: #80c0ee;
-    border : 0.5px solid rgb(96, 189, 243);
+    color:#27c5ff;
+    border : 0.5px solid#27c5ff;
     cursor: pointer;
     margin: 40px auto;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 
@@ -629,8 +633,8 @@ video{
     border-radius: 5px;
     background: none;
     font-weight: bold;
-    color: #80c0ee;
-    border : 0.5px solid rgb(96, 189, 243);
+    color: #27c5ff;
+    border : 0.5px solid #27c5ff;
     position: relative;
     top:0%;
     left:0%;
@@ -641,7 +645,7 @@ video{
     padding: 10px 25px;
     width: 100%;
     border-radius: 5px;
-    background: rgb(96, 189, 243);
+    background:#27c5ff;
     border:none;
     font-weight: bolder;
     color:#1D2026;
@@ -719,7 +723,7 @@ video{
     #header{
     width: 100vw;
     position:fixed;
-    height:14vh;
+    height:13vh;
     background: #1e2024;
     padding: 24px;
     align-items: center;
@@ -740,10 +744,12 @@ video{
         width:fit-content;
     }
     
-
+    .menu{
+        margin-top: 5px;
+    }
     .logo img{
         
-        width:50%;
+        width:42%;
     }
 .content-head{
     color: white;
@@ -761,7 +767,7 @@ video{
         margin: 40px auto;
         padding:20px;
         margin-top: 45px;
-        border: 0.1px solid rgb(71, 165, 189);
+        border: 0.1px solid #27c5ff;
         background: #1D2026;
         box-shadow: 1px 1px 50px black;
     }
@@ -898,8 +904,8 @@ video{
        border-radius: 5px;
        background: none;
        font-weight: bold;
-       color: #80c0ee;
-       border : 0.5px solid rgb(96, 189, 243);
+       color: #27c5ff;
+       border : 0.5px solid #27c5ff;
        position: relative;
        top:0%;
        left:0%;
@@ -911,7 +917,7 @@ video{
        padding: 10px 25px;
        width: 100%;
        border-radius: 5px;
-       background: rgb(96, 189, 243);
+       background: #27c5ff;
        border:none;
        font-weight: bolder;
        color:#1D2026;
@@ -961,7 +967,7 @@ video{
     margin:20vh auto;
     padding: 50px;
     background: #1D2026;
-    border: 1px solid rgb(71, 165, 189);
+    border: 1px solid #27c5ff;
     border-radius: 5px;
     width: 50%;
     position: relative;
